@@ -11,7 +11,7 @@ The Airbnb Clone Project is a full-stack application that simulates a booking pl
 5-Reviews: Leave ratings and feedback
 6-Data Optimization: Improve database speed and storage
 
-# Tech Stack
+# Technology Stack
 
 1-Django: A high-level Python web framework used for building the RESTful API.
 2-Django REST Framework: Provides tools for creating and managing RESTful APIs.

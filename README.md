@@ -150,3 +150,6 @@ Relationships
 A review belongs to one user (guest).
 
 A review belongs to one property.
+
+
+# Feature Breakdown

@@ -152,4 +152,70 @@ A review belongs to one user (guest).
 A review belongs to one property.
 
 
-# Feature Breakdown
+# API Security
+
+Security Measures for Airbnb-like Platform
+🔐 Key Security Measures
+Authentication & Authorization
+
+Multi-Factor Authentication (MFA) - SMS/email verification, TOTP apps
+JWT Tokens - Short-lived tokens (15-30 min) with refresh rotation
+OAuth 2.0 - Secure social login with Google/Facebook
+Role-Based Access Control - Separate permissions for guests, hosts, admins
+
+Data Protection
+
+Encryption - AES-256 for data at rest, TLS 1.3 for data in transit
+GDPR Compliance - Data minimization, right to be forgotten, consent management
+Field-Level Encryption - Extra protection for sensitive personal data
+
+Payment Security
+
+PCI DSS Compliance - No card data storage, tokenization only
+Fraud Prevention - ML algorithms, geolocation checks, velocity limits
+3D Secure Authentication - Additional verification for card payments
+
+API Security
+
+Rate Limiting - 1000 requests/hour per user, stricter for sensitive endpoints
+Input Validation - SQL injection and XSS prevention
+Web Application Firewall (WAF) - Filter malicious traffic
+Real-time Monitoring - Automated threat detection and blocking
+
+Infrastructure Security
+
+Network Isolation - VPC with private subnets for databases
+DDoS Protection - Cloud-based traffic filtering
+Regular Updates - Automated security patches and vulnerability scanning
+
+
+🎯 Why Security is Critical
+User Management
+
+Risk: Identity theft, account takeover, personal data exposure
+Impact: GDPR fines (up to 4% revenue), user exodus, reputation damage
+
+Payment System
+
+Risk: Credit card fraud, money laundering, financial data theft
+Impact: Massive financial losses, payment processor suspension, legal liability
+
+Property Listings
+
+Risk: Fake listings, scams, location privacy breaches
+Impact: Guest safety incidents, host distrust, platform liability
+
+Booking System
+
+Risk: Price manipulation, double bookings, session hijacking
+Impact: Financial disputes, guest/host conflicts, booking chaos
+
+Admin Dashboard
+
+Risk: Complete system compromise, insider threats
+Impact: Total platform control by attackers, all data exposed
+
+Reviews & Ratings
+
+Risk: Fake reviews, reputation manipulation, defamatory content
+Impact: Unfair competition, legal liability, system credibil

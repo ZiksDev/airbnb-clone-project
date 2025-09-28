@@ -152,7 +152,7 @@ A review belongs to one user (guest).
 A review belongs to one property.
 
 
-# API Security
+
 
 Security Measures for Airbnb-like Platform
 🔐 Key Security Measures
@@ -219,3 +219,56 @@ Reviews & Ratings
 
 Risk: Fake reviews, reputation manipulation, defamatory content
 Impact: Unfair competition, legal liability, system credibil
+
+
+# CI/CD Pipeline
+
+Speed & Reliability
+
+Faster releases: Deploy new features and bug fixes multiple times per day
+Reduced errors: Automated testing catches bugs before they reach users
+Consistent deployments: Same process every time eliminates human error
+
+Business Benefits
+
+Quick security patches: Critical for payment and user data security
+Rapid feature rollouts: Stay competitive with booking platforms like Airbnb
+Instant rollbacks: Quickly revert problematic changes without downtime
+Multi-environment consistency: Identical staging and production environments
+
+Quality Assurance
+
+Automated testing: Unit, integration, and security tests run on every change
+Code quality checks: Linting, security scanning, and dependency checks
+Database migrations: Safely update schemas across environments
+
+Recommended Tools
+Version Control & CI/CD Platform
+
+GitHub Actions - Integrated with GitHub, free for public repos
+GitLab CI/CD - Built-in GitLab, excellent Docker integration
+Jenkins - Self-hosted, highly customizable
+
+Containerization & Orchestration
+
+Docker - Package applications with dependencies
+Kubernetes - Container orchestration for scalability
+Docker Compose - Local development environment setup
+
+Cloud Deployment
+
+AWS CodePipeline - Native AWS integration
+Azure DevOps - Microsoft cloud ecosystem
+Google Cloud Build - GCP-native CI/CD
+
+Infrastructure as Code
+
+Terraform - Multi-cloud infrastructure provisioning
+AWS CloudFormation - AWS-specific infrastructure
+Ansible - Configuration management and deployment
+
+Testing & Quality
+
+SonarQube - Code quality and security analysis
+Jest/Mocha - JavaScript testing frameworks
+Selenium - Automated browser testing for booking flows
